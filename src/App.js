@@ -1,7 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Grid, Paper, Typography, CardMedia, Card, CardContent, Link } from '@material-ui/core/';
+import logo from './nft_of_the_day_logo.png';
+
+var w = window.innerWidth;
+var h = window.innerHeight;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -13,13 +16,18 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
   },
   media: {
-    height: 500,
-    width: 500
+    height: h*0.5,
+    width: w*0.25,
   },
   card: {
-    height: 200,
-    width: 500,
+    height: h*0.2,
+    width: w*0.25,
     flexWrap: 'wrap'
+  },
+  container: {
+    backgroundColor: 'black',
+    flex: 1,
+    height: h*1.1
   }
 }));
 
@@ -28,12 +36,12 @@ export default function App() {
   const preventDefault = (event) => event.preventDefault();
 
   return (
-    <Container>
+    <Container className={classes.container}>
 
     {/* logo and header material */}
       <Grid container direction="column" alignItems="center" justify="center" spacing={10}>
         <Grid item xs={12} styles={{justifyContent: 'center', alignItems: 'center'}}>
-          <Typography variant='h3'>NFTofTheDay</Typography>
+          <img src={logo} />
         </Grid>
       </Grid>
 
