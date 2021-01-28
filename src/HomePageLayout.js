@@ -42,14 +42,15 @@ export default function HomePageLayout() {
 
     {/* logo and header material */}
       <Grid style={{textAlign: 'center'}} item xl={12} lg={12} s={12} xs={12}>
-        <img src={logo} />
+        <img src={logo} width='25%'
+        height='auto'/>
       </Grid>
 
     {/* NFTofTheDay image */}
       <Grid style={{textAlign: 'center'}} item xl={12} lg={12} s={12} xs={12}>
         <img
         src="https://lh3.googleusercontent.com/MFBTv5s-kkwNu2PRSJ71mlhDUnn_71FnUDqy6x2np7VcvvpWht-_t757A7bXJIOqWxD2BG9g6RrhTFiHavLLL26ITw=s992"
-        width='25%'
+        width='40%'
         height='auto'
         />
       </Grid>
@@ -58,8 +59,8 @@ export default function HomePageLayout() {
        <Grid item style={{textAlign: 'center'}} item xl={12} lg={12} s={12} xs={12}>
          <div class="card">
            <div class="container">
-             <h4><b>Pray</b></h4>
-             <p>Created by FeltZine</p>
+             <h1><b>Pray</b></h1>
+             <h3>Created by FeltZine</h3>
              <a href="https://opensea.io/assets/0xb932a70a57673d89f4acffbe830e8ed7f75fb9e0/15416" target="_blank">
              Listed on Opensea.io
              </a>
