@@ -49,8 +49,9 @@ export default function HomePageLayout() {
       <Grid style={{textAlign: 'center'}} item xl={12} lg={12} s={12} xs={12}>
         <img
         src="https://lh3.googleusercontent.com/MFBTv5s-kkwNu2PRSJ71mlhDUnn_71FnUDqy6x2np7VcvvpWht-_t757A7bXJIOqWxD2BG9g6RrhTFiHavLLL26ITw=s992"
-        width='40%'
+        width='80%'
         height='auto'
+        class='nft-img'
         />
       </Grid>
 
