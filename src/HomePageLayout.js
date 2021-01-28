@@ -42,8 +42,7 @@ export default function HomePageLayout() {
 
     {/* logo and header material */}
       <Grid style={{textAlign: 'center'}} item xl={12} lg={12} s={12} xs={12}>
-        <img src={logo} width='25%'
-        height='auto'/>
+        <img src={logo} width='80%' class='logo' />
       </Grid>
 
     {/* NFTofTheDay image */}
