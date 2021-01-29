@@ -1,7 +1,13 @@
 import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Grid, Paper, Typography, CardMedia, Card, CardContent, Link } from '@material-ui/core/';
+import { Container, Grid, Paper, Typography, CardMedia, Card, CardContent } from '@material-ui/core/';
 import logo from './nft_of_the_day_logo.png';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 var w = window.innerWidth;
 var h = window.innerHeight;
@@ -38,14 +44,7 @@ export default function HomePageLayout() {
   const preventDefault = (event) => event.preventDefault();
 
   return (
-    <Container className={classes.mainGrid} maxWidth='xl'>
-
-    {/* logo and header material */}
-      <Grid style={{textAlign: 'center'}} item xl={12} lg={12} s={12} xs={12}>
-        <img src={logo} width='80%' class='logo' />
-      </Grid>
-
-    {/* NFTofTheDay image */}
+      <Grid container>
       <Grid style={{textAlign: 'center'}} item xl={12} lg={12} s={12} xs={12}>
         <img
         src="https://lh3.googleusercontent.com/MFBTv5s-kkwNu2PRSJ71mlhDUnn_71FnUDqy6x2np7VcvvpWht-_t757A7bXJIOqWxD2BG9g6RrhTFiHavLLL26ITw=s992"
@@ -55,7 +54,7 @@ export default function HomePageLayout() {
         />
       </Grid>
 
-   {/* text area below img */}
+
        <Grid item style={{textAlign: 'center'}} item xl={12} lg={12} s={12} xs={12}>
          <div class="card">
            <div class="container">
@@ -67,8 +66,7 @@ export default function HomePageLayout() {
            </div>
          </div>
        </Grid>
-
-  </Container>
+       </Grid>
 
   );
 }

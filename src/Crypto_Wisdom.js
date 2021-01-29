@@ -8,9 +8,6 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import HomePageLayout from './HomePageLayout.js';
-import Crypto_Wisdom from './Crypto_Wisdom.js';
-import Bitcoin_Paper from './Bitcoin_Paper.js';
 
 var w = window.innerWidth;
 var h = window.innerHeight;
@@ -36,42 +33,18 @@ const useStyles = makeStyles((theme) => ({
   mainGrid: {
     // flex: 1,
     direction: 'row',
-    backgroundColor: 'blue',
   },
   logo: {
     flex: 1,
   },
 }));
 
-
-export default function App() {
+export default function Crypto_Wisdom() {
   const classes = useStyles();
   const preventDefault = (event) => event.preventDefault();
 
   return (
-    <Router>
-    <Container className={classes.mainGrid} maxWidth='xl'>
-    {/* logo and header material */}
-      <Grid style={{textAlign: 'center'}} item xl={12} lg={12} s={12} xs={12}>
-        <Link to="/">
-          <img src={logo} width='80%' class='logo' />
-        </Link>
-      </Grid>
-
-      <Grid item>
-        <Link to="/crypto_wisdom" className="link">
-          <Typography>NFT Wisdom</Typography>
-        </Link>
-      </Grid>
-
-
-      <Switch>
-        <Route exact path="/" component={HomePageLayout} />
-        <Route path="/crypto_wisdom" component={Crypto_Wisdom} />
-      </Switch>
-
-    </Container>
-    </Router>
+    <Typography color='white'>NFT Wisdom</Typography>
   );
 }
 
